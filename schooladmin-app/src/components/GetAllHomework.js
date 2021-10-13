@@ -70,7 +70,7 @@ const GetAllHomework = (props) => {
                         id="submit"
                         name="submit"
                         className="btn btn-primary mb-3"
-                        value="Get All StudyMaterials"
+                        value="Get All Homework"
                         onClick={viewHomework}
                     />
                 </div>
