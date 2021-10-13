@@ -20,6 +20,11 @@ import GetStudyMaterialById from './components/student/GetStudyMaterialById';
 import GetNoticeById from './components/student/GetNoticeById';
 import GetAllStudyMaterial from './components/student/GetAllStudyMaterials';
 import GetHomeworkById from './components/student/GetHomeworkById';
+import GetCourseById from './components/student/GetCourseById';
+import GetAllHomework  from './components/student/GetAllHomework';
+import GetAdminById from './components/admin/GetAdminById';
+import GetStudentById from './components/admin/GetStudentById';
+import GetTeacherById from './components/admin/GetTeacherById';
 import Home from './components/Home';
 
 
@@ -49,7 +54,12 @@ const Routes = () => {
                             <Route path="/addAdmin"><AddAdmin/></Route>
                             <Route path="/adminLogin"><AdminLogin /></Route>
                             {/* <Route path="/addCourse"><AddCourse /></Route> */}
-                           <Route path="/addComplaint"><AddComplaint/></Route>
+                            <Route path="/getCourseById"><GetCourseById/></Route>
+                            <Route path="/addComplaint"><AddComplaint/></Route>
+                            <Route path="/getAllHomework"><GetAllHomework/></Route>
+                            <Route path="/getAdminById"><GetAdminById/></Route>
+                            <Route path="/getStudentById"><GetStudentById/></Route>
+                            <Route path="/getTeacherById"><GetTeacherById/></Route>
                             <Route path="/*"> <PageNotFound /> </Route>
                         </Switch>
                     </div>
